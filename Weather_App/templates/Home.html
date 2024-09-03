@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<form action="" method="get">
+    <input type="text" placeholder="Search" name="city" required>
+    <button type="submit">
+        <img class="search-icon" src="data:image/jpeg;base64,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" alt="">
+    </button>
+</form>
+{% if error_message %}
+    <div style="color: red; margin-top: 10px;">
+        {{ error_message }}
+    </div>
+    {% endif %}
+{% if data %}   
+<div class="weather-icon">
+            <img style="width: 150px;box-sizing: border-box;" src="http://openweathermap.org/img/wn/{{ data.icon }}@2x.png" alt="">
+    </div>
+             <div style="line-height: 5px;">
+                 <p style="font-size: 36px;">{{ data.celcius_temperature }}°c</p>
+                 <p style="font-size: 26px;">{{ data.city }}</p>
+             </div>
+        <div class="bottom">
+            <div style="display: flex;flex-direction:row ;width: 1/2;gap: 3px;height: 60px;">
+                <div style="display: flex;margin-top: 4vh;">
+                    <i class="fa-solid fa-water fa-lg" style="color: #fafafa;"></i>
+                </div>
+                    <p> <span style="font-size: 18px;"> {{ data.humidity }}%</span> <br>Humidity</p>
+            </div>
+            <div style="display: flex;flex-direction:row ;width: 1/2;gap: 3px;">
+                <div style="display: flex;margin-top: 4vh;">
+                    <i class="fa-solid fa-meteor fa-lg" style="color: #fafafa;"></i>
+                </div>
+                    <p style="width: 65px;"> <span style="font-size: 18px;"> {{ data.pressure }} Pa</span> Pressure</p>
+            </div>
+        </div>
+{% endif %}
+</div>
+{% endblock %}

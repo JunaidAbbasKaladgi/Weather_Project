@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "Weather_Project/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdašize": "156",
+                "runtime": "python3.10"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Weather_Project/wsgi.py"
+        }
+    ]
+}
